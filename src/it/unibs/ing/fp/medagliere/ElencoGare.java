@@ -6,17 +6,11 @@ public class ElencoGare
 {
 	private Vector<Gara> elenco= new Vector<>();
 	
-//	public boolean contains (Gara g)
-//	{
-//	boolean flag= false;
-//	for (Gara u: elenco)
-//	{
-//		if (u.getNome().equalsIgnoreCase(g.getNome()))
-//			flag=true;
-//	}
-//	return flag;
-//	}
-	
+	/**
+	 * aggiunge una gara ad elenco se non è già presente
+	 * @param gara
+	 * @return true se è stata inserita, false altrimenti
+	 */
 	public boolean addGara (Gara _gara)
 	{
 		boolean flag;
@@ -30,21 +24,39 @@ public class ElencoGare
 			elenco.add(_gara);
 		}
 		
-		return flag;
-		
+		return flag;	
 	}
 	
-	
+	/**
+	 * crea una stringa contenente tutte le gare prive di risultato 
+	 * @return stringa di gare
+	 */
 	public String printGareWOResult()
 	{
 		StringBuffer str = new StringBuffer ("Elenco gare senza risultato:\n");
 		for (Gara g: elenco)
 		{
-			if (g.getRisultato().size()==0)
+			if (g.getNazPremiate().size()==0)
 				str.append(g.getNome() + "\n");
 		}
 		return str.toString();
 	}
+	
+	/**
+	 * crea un vector contenente tutte le gare prive di risultato
+	 * @return vector di gare
+	 */
+	public Vector<Gara> getGareWOResult()
+	{
+		Vector<Gara> str= new Vector <>();
+		for (Gara g: elenco)
+		{
+			if (g.getNazPremiate().size()==0)
+				str.add(g);
+		}
+		return str;
+	}
+	
 	@Override
 	public String toString()
 	{

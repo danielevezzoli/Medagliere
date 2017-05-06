@@ -7,10 +7,11 @@ public class Nazione
 	private int nTotArgenti=0;
 	private int nTotBronzi=0;
 	
+	//costruttore vuoto
 	public Nazione ()
-	{
-		
+	{	
 	}
+	
 	public Nazione (String _nome)
 	{
 		nome=_nome;
@@ -33,14 +34,26 @@ public class Nazione
 	
 	public String toString() 
 	{
-		return String.format("%s %n Numero ori: %d%n Numero argenti: %d%n Numero bronzi: %d%n", nome,nTotOri,nTotArgenti,nTotBronzi);
+//		return String.format("%s : Numero ori: %d%n Numero argenti: %d%n Numero bronzi: %d%n", nome,nTotOri,nTotArgenti,nTotBronzi);
+		return String.format("%s :  %d  %d  %d", nome,nTotOri,nTotArgenti,nTotBronzi);
+
 	}
 	
+	public int getnTotOri() {
+		return nTotOri;
+	}
+	public int getnTotArgenti() {
+		return nTotArgenti;
+	}
+	public int getnTotBronzi() {
+		return nTotBronzi;
+	}
 	public String getNome()
 	{
 		return nome;
 	}
 	
+	//override del metodo equals
 	@Override
 	public boolean equals(Object obj) 
 	{
