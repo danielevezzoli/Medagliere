@@ -6,6 +6,16 @@ public class ElencoNazioni
 {
 	private Vector<Nazione> elenco= new Vector <>(); 
 	
+//	private boolean contains (Nazione n)
+//	{
+//		boolean flag= false;
+//		for (Nazione u: elenco)
+//		{
+//			if (u.getNome().equalsIgnoreCase(n.getNome()))
+//				flag=true;
+//		}
+//		return flag;
+//	}
 	public boolean addNazione (Nazione _nazione)
 	{
 		boolean flag;

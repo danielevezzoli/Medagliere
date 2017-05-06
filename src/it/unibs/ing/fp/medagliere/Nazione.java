@@ -7,6 +7,10 @@ public class Nazione
 	private int nTotArgenti=0;
 	private int nTotBronzi=0;
 	
+	public Nazione ()
+	{
+		
+	}
 	public Nazione (String _nome)
 	{
 		nome=_nome;
@@ -36,4 +40,22 @@ public class Nazione
 	{
 		return nome;
 	}
+	
+	@Override
+	public boolean equals(Object obj) 
+	{
+		if ((obj instanceof Nazione))
+		{
+			Nazione n=(Nazione)obj;
+			if (nome.equalsIgnoreCase(n.getNome()))
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;	
+	}
+	
+	
+	
 }
