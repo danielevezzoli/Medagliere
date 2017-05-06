@@ -6,7 +6,7 @@ import mylib.InputDati;
 import mylib.MyMenu;
 public class MedagliereMain 
 {
-	//opzioni del menù iniziale del programma
+	//opzioni del menù iniziale del programma u
 	public static final String[] VOCI_MENU_INIZIALE = {"Inserire nuova nazione", "Inserire nuova gara", "Inserire risultato gara", "Visualizzare medagliere"};
 	public static final String TITOLO_MENU_MEDAGLIERE = "Medagliere";
 	public static final String END = "Fine";
