@@ -1,8 +1,7 @@
 package it.unibs.ing.fp.medagliere;
 
-import it.unibs.fp.mylib.InputDati;
+import java.util.Vector;
 
-<<<<<<< HEAD
 import mylib.InputDati;
 import mylib.MyMenu;
 public class MedagliereMain 
@@ -28,14 +27,8 @@ public class MedagliereMain
 	public static void main (String[] args)
 	{
 
-=======
-public class MedagliereMain {
-
-	public static void main(String[] args) {
->>>>>>> branch 'master' of https://github.com/danielevezzoli/Medagliere.git
 		ElencoNazioni medagliere = new ElencoNazioni();
 		ElencoGare gare = new ElencoGare();
-<<<<<<< HEAD
 		
 		
 		MyMenu menu= new MyMenu(TITOLO_MENU_MEDAGLIERE, VOCI_MENU_INIZIALE);
@@ -207,26 +200,13 @@ public class MedagliereMain {
 		}
 		
 		
-=======
-
-		Nazione nazione = new Nazione(InputDati.leggiStringaNonVuota("inserisci nazione"));
-		medagliere.addNazione(nazione);
-		Nazione nazione2 = new Nazione(InputDati.leggiStringaNonVuota("inserisci nazione"));
-		medagliere.addNazione(nazione2);
-		System.out.println(medagliere);
-
->>>>>>> branch 'master' of https://github.com/danielevezzoli/Medagliere.git
 	}
-<<<<<<< HEAD
 	
 	private void aggiungi_nazione()
 	{
 		
 	}
 		
-=======
-
->>>>>>> branch 'master' of https://github.com/danielevezzoli/Medagliere.git
 }
 	
 
